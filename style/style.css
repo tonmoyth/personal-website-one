@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.roboto-font{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+/* comon style */
+.color{
+    color: rgb(60, 60, 60);
+}
+.btn-are .btn{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: linear-gradient(0.00deg, rgb(255, 128, 99) -28.333%,rgb(244, 96, 96) 95.833%);
+    color: #fff;
+}
+.btn-are .btn:hover{
+    background: linear-gradient(0.00deg, rgb(229, 109, 82) -28.333%,rgb(246, 73, 73) 95.833%);
+    
+}
+  /* style headaer */
+.header{
+    margin: 25px 140px;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: end;
+    gap: 27px;
+    list-style: none;
+  }
+  .nav-bar ul a{
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+    font-size: 16px;
+    font-weight: 500px;
+    padding: 10px;
+  }
+  .nav-bar ul a:hover{
+    text-decoration: underline;
+  }
+  /* hero section style */
+  .header .hero{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    column-gap:  200px;
+  }
+  .header .hero img{
+    width: 100%;
+  }
+  .header .hero > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hero .hire-me h1{
+    font-size: 50px;
+  }
+  .hero .hire-me .span{
+    color: rgb(255, 131, 103);
+  }
+
+
+
+
+
+
+
+
+
+  
+
+  /* responsive area */
+  @media screen and (max-width:576px){
+    .header{
+        margin: 25px 25px;
+    }
+    .nav-bar ul{
+        justify-content: center;
+      }
+      .header .hero{
+        grid-template-columns: repeat(1 , 1fr);
+        margin-top: 25px;
+        text-align: center;
+      }
+  }
+  @media screen and (min-width:576px) and (max-width:992px){
+    .header{
+        margin: 25px 25px;
+    }
+     .nav-bar ul{
+        justify-content: center;
+      }
+      .header .hero{
+        grid-template-columns: repeat(1 , 1fr);
+        margin-top: 25px;
+        text-align: center;
+      } 
+  } 
