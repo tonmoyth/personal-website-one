@@ -5,7 +5,6 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
-    margin: 25px 140px;
   }
 *{
     margin: 0;
@@ -21,6 +20,7 @@
     border-radius: 6px;
     background: linear-gradient(0.00deg, rgb(255, 128, 99) -28.333%,rgb(244, 96, 96) 95.833%);
     color: #fff;
+    
 }
 .btn-are .btn:hover{
     background: linear-gradient(0.00deg, rgb(229, 109, 82) -28.333%,rgb(246, 73, 73) 95.833%);
@@ -44,6 +44,9 @@
     text-decoration: underline;
   }
   /* hero section style */
+  .header{
+    margin: 25px 140px;
+  }
   .header .hero{
     display: flex;
     justify-content: space-around;
@@ -74,6 +77,7 @@
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
   column-gap: 220px;
+  margin: 25px 140px;
 }
 .section-one .title-are{
   display: flex;
@@ -88,9 +92,34 @@
 .section-one .image-are img{
   width: 100%;
 }
-
-
-
+/* section two/card-container */
+.section-two{
+  margin: 40px 0px;
+  background-color: rgba(229, 229, 229,0.2);
+  padding: 50px 0px;
+}
+.section-two h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  column-gap: 30px;
+  padding: 20px 140px;
+}
+.card-container img{
+  width: 100%;
+}
+.card-container .card{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(229, 229, 229);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
 
 
   
@@ -102,6 +131,9 @@
     }
     .roboto-font{
       margin: 10px 10px;
+    }
+    .section-one{
+      margin: 25px 25px;
     }
     .nav-bar ul{
         justify-content: center;
@@ -125,10 +157,24 @@
         align-items: center;
         text-align: center;
       }
+      .card-container{
+        grid-template-columns: repeat(1 , 1fr);
+        row-gap: 30px;
+        padding: 20px 20px;
+      }
+      .card-container .card{
+        text-align: center;
+      }
   }
   @media screen and (min-width:576px) and (max-width:992px){
     .header{
         margin: 25px 25px;
+    }
+    .roboto-font{
+      margin: 20px 20px;
+    }
+    .section-one{
+      margin: 25px 25px;
     }
      .nav-bar ul{
         justify-content: center;
@@ -150,6 +196,14 @@
       }
       .section-one .title-are{
         align-items: center;
+        text-align: center;
+      }
+      .card-container{
+        grid-template-columns: repeat(2 , 1fr);
+        row-gap: 30px;
+        padding: 20px 20px;
+      }
+      .card-container .card{
         text-align: center;
       }
   } 
