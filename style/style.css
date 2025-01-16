@@ -5,6 +5,7 @@
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+    margin: 25px 140px;
   }
 *{
     margin: 0;
@@ -26,9 +27,6 @@
     
 }
   /* style headaer */
-.header{
-    margin: 25px 140px;
-}
 .nav-bar ul{
     display: flex;
     justify-content: end;
@@ -47,13 +45,17 @@
   }
   /* hero section style */
   .header .hero{
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    column-gap:  200px;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 100px;
   }
+  /* .header .hero .img-area{
+    width: 75%;
+    justify-content: right;
+  } */
   .header .hero img{
-    width: 100%;
-  }
+    width: 50%;
+  } 
   .header .hero > div{
     display: flex;
     flex-direction: column;
@@ -67,9 +69,25 @@
     color: rgb(255, 131, 103);
   }
 
-
-
-
+/* main/section one style */
+.section-one{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  column-gap: 220px;
+}
+.section-one .title-are{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+.section-one .title-are h1{
+  font-size: 40px;
+  font-weight: 700px;
+}
+.section-one .image-are img{
+  width: 100%;
+}
 
 
 
@@ -82,12 +100,29 @@
     .header{
         margin: 25px 25px;
     }
+    .roboto-font{
+      margin: 10px 10px;
+    }
     .nav-bar ul{
         justify-content: center;
       }
       .header .hero{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        text-align: center;
+        row-gap: 20px;
+      }
+      .section-one{
         grid-template-columns: repeat(1 , 1fr);
-        margin-top: 25px;
+      }
+      .header .hero img{
+        width: 100%;
+      } 
+      .hero .hire-me h1{
+        font-size: 35px;
+      }
+      .section-one .title-are{
+        align-items: center;
         text-align: center;
       }
   }
@@ -99,8 +134,22 @@
         justify-content: center;
       }
       .header .hero{
-        grid-template-columns: repeat(1 , 1fr);
-        margin-top: 25px;
+        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+        row-gap: 20px;
       } 
+      .header .hero img{
+        width: 100%;
+      } 
+      .hero .hire-me h1{
+        font-size: 30px;
+      }
+      .section-one{
+        grid-template-columns: repeat(1 , 1fr);
+      }
+      .section-one .title-are{
+        align-items: center;
+        text-align: center;
+      }
   } 
